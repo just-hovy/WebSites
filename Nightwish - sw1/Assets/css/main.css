@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Shelley Volante";
+    /* IE9*/
+    src: url("../font/79b2fefe928021365182946edb6f41d1.eot");
+    src: url("../font/79b2fefe928021365182946edb6f41d1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/79b2fefe928021365182946edb6f41d1.woff2") format("woff2"), /* chrome、firefox */
+    url("../font/79b2fefe928021365182946edb6f41d1.woff") format("woff"), /* chrome、firefox */
+    url("../font/79b2fefe928021365182946edb6f41d1.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../font/79b2fefe928021365182946edb6f41d1.svg#Shelley Volante") format("svg");
+    /* iOS 4.1- */
+}
+
+header {
+    max-width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    height: 200px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    max-width: 100%;
+    height: 50px;
+}
+
+.container_nav>.float-box_nav {
+    width: 25%;
+    height: 50px;
+    float: left;
+    font-family: "Shelley Volante" !important;
+    font-size: 35px;
+    font-style: normal;
+    color: silver;
+}
+
+.float-box_nav {
+    position: relative;
+}
+
+.float-box_nav:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.invisibleLink {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.line {
+    max-width: 100%;
+    height: 2px;
+    background-color: silver;
+    margin-top: 60px;
+}
+
+footer {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: end;
+    margin-top: 20px;
+}
+
+@media print {
+    .container_nav>.float-box_nav {
+        font-size: 0px;
+    }
+    header {
+        height: 0%;
+    }
+    .logo {
+        font-size: 50px;
+        font-family: serif;
+        height: 0%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container_nav>.float-box_nav {
+        width: 100%;
+    }
+}

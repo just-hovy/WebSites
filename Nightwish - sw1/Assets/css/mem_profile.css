@@ -1,0 +1,35 @@
+main {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h1 {
+    padding-bottom: 25px;
+}
+
+.wrapperFotorama {
+    text-align: center;
+}
+
+.fotorama {
+    display: inline-block;
+}
+
+@media print {
+    main {
+        color: black;
+        font-family: serif;
+    }
+    main h1 {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapperFotorama {
+        width: 100%;
+    }
+    .fotorama {
+        width: 90%;
+    }
+}

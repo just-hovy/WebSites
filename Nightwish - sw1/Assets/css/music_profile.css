@@ -1,0 +1,98 @@
+.discography {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.album {
+    height: 320px;
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 10px;
+    border: 2px solid silver;
+    margin-bottom: 35px;
+    background-color: rgb(14, 15, 15);
+}
+
+.info {
+    width: 37.5%;
+    float: left;
+}
+
+.info_2 {
+    padding-top: 15px;
+    width: 37.5%;
+    float: left;
+}
+
+.info h2 {
+    font-size: 35px;
+}
+
+.pic {
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+
+.pic img {
+    width: 316px;
+    height: 316px;
+}
+
+h1 {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media print {
+    h1 {
+        color: black;
+        font-family: serif;
+    }
+    .discography {
+        color: black;
+        font-family: serif;
+    }
+    .album {
+        height: 380px;
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 0px;
+        border: none;
+        border-bottom: 2px solid black;
+        margin-bottom: 0px;
+    }
+    .pic {
+        display: none;
+        width: 0%;
+    }
+    .info {
+        width: 50%;
+    }
+    .info_2 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .album {
+        height: 600px;
+        width: 100%;
+        padding-top: 2px;
+        padding-left: 10px;
+        border: none;
+        margin-bottom: 35px;
+        background-color: black;
+    }
+    .pic {
+        width: 100%;
+        text-align: left;
+        margin: 10px;
+    }
+    .info {
+        width: 100%;
+    }
+    .info_2 {
+        width: 100%;
+    }
+}

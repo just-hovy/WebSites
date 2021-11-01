@@ -1,0 +1,15 @@
+main {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main img {
+    max-width: 100%;
+}
+
+@media print {
+    main {
+        color: black;
+        font-family: serif;
+    }
+}

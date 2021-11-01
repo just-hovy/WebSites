@@ -1,0 +1,48 @@
+.conteiner {
+    text-align: center;
+}
+
+.conteiner>.content {
+    max-width: 100%;
+    height: 1600px;
+}
+
+.content_news {
+    width: 35%;
+    padding-right: 2.5%;
+    float: left;
+}
+
+.content_news img {
+    max-width: 100%;
+}
+
+.content_music {
+    width: 60%;
+    margin-left: 2.5%;
+    float: right;
+}
+
+main {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 440px;
+    border: 0;
+}
+
+@media print {
+    .content_music {
+        display: none;
+    }
+    .content_news {
+        width: 100%;
+    }
+    main {
+        color: black;
+        font-family: serif;
+    }
+}

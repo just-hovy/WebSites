@@ -1,0 +1,79 @@
+.container {
+    color: silver;
+    font-family: "Shelley Volante" !important;
+    font-size: 35px;
+}
+
+.container img {
+    max-width: 50px;
+    max-height: 50px;
+    padding-right: 7px;
+    float: right;
+}
+
+.container>.float-box {
+    width: 50%;
+    height: 350px;
+    float: left;
+}
+
+.float-box {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.float-box:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.float-box:nth-child(1) {
+    background-image: url("../img/tarja_head.jpg");
+}
+
+.float-box:nth-child(2) {
+    background-image: url("../img/anette_head.jpg");
+}
+
+.float-box:nth-child(3) {
+    background-image: url("../img/jukka_head.jpg");
+}
+
+.float-box:nth-child(4) {
+    background-image: url("../img/sami_head.jpg");
+}
+
+h1 {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media print {
+    .container>.float-box {
+        widows: 100%;
+        float: none;
+        height: 100px;
+        color: black;
+        font-family: serif;
+        font-size: 30px;
+        text-shadow: none;
+    }
+    h1 {
+        color: black;
+        font-family: serif;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container>.float-box {
+        width: 100%;
+    }
+}

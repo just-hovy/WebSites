@@ -1,0 +1,53 @@
+main {
+    color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.container>.content {
+    width: 50%;
+    height: 350px;
+    float: left;
+    transition: 0.3s;
+}
+
+.content {
+    position: relative;
+    font-style: normal;
+    color: silver;
+}
+
+.content h2 {
+    font-family: "Shelley Volante";
+    font-size: 65px;
+}
+
+.content p {
+    text-align: left;
+    margin-left: 34%;
+}
+
+.content:hover {
+    background-color: #0d0e0e;
+    transform: scale(1.1);
+}
+
+@media print {
+    main {
+        color: black;
+        font-family: serif;
+    }
+    .content {
+        color: black;
+    }
+    .content h2 {
+        font-family: serif;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container>.content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
